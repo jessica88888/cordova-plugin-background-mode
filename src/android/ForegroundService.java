@@ -201,7 +201,8 @@ public class ForegroundService extends Service {
                 .setContentTitle(title)
                 .setContentText(text)
                 .setOngoing(true)
-                .setSmallIcon(getIconResId(settings));
+                .setSmallIcon(getIconResId(settings))
+                .setImportance(NotificationManager.IMPORTANCE_HIGH);
 
         if(Build.VERSION.SDK_INT >= 26){
                    notification.setChannelId(CHANNEL_ID);
