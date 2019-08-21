@@ -138,11 +138,11 @@ exports.configure = function (options)
     if (!this._isAndroid)
         return;
 
-    if (!this._isActive)
+    /*if (!this._isActive)
     {
         console.log('BackgroundMode is not active, skipped...');
         return;
-    }
+    }*/
 
     this._mergeObjects(options, settings);
     this._mergeObjects(options, defaults);
